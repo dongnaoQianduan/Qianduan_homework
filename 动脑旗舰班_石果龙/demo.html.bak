@@ -1,0 +1,16 @@
+<!doctype html>
+<html language="english">
+	<head>
+		<mate charset="UTF-8">
+		<title>我的第一个作业</title>
+	</head>
+	<body>
+		<p>段落</p>
+		<b>加粗</b>
+		<strong>加粗，语义强调</strong>
+		<i>斜体</i>
+		<em>斜体，语意强调</em>
+		<a href="#" target="_blank"></a>
+		<img src="" alt="">
+	</body>
+</html>
