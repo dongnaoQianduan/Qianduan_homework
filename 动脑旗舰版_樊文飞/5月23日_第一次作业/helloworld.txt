@@ -1,1 +1,28 @@
-爱上对方快乐撒娇付款了
+﻿抄写了10遍。
+
+<!doctype html>
+<html>
+	<head>
+		<title>标题</title>
+		<meat charset="utf-8">
+	</head>
+	<body>
+		<h1>一号标题</h1>
+		<h2>二号标题，一个页面用2次</h2>
+		<h3>三号标题，一个页面用3次</h3>
+		<h4>四号标题，一个页面用4次</h4>
+		<h5>五号标题，一个页面用5次</h5>
+
+		<div>
+			<strong>强调</strong>
+			<b>加粗</b>
+			<i>斜体</i>
+			<em>斜体</em>
+		</div>
+	</body>
+	
+	
+</html>
+
+
+英语单词: meta  元数据    
