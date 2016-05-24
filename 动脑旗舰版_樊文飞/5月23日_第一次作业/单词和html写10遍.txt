@@ -1,7 +1,7 @@
 ﻿抄写了10遍。
 
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<title>标题</title>
 		<meat charset="utf-8">
