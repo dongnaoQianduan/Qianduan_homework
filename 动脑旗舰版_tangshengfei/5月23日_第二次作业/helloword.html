@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>helloword</title>
 </head>
+
 <body>
-    helloword......
+
 </body>
+<script>
+    var Event = (function() {
+        
+        var handls = {};
+
+        function listen(event, callback) {
+            if (handls[event] == null) {
+                handls[event] = [];
+            }
+            handls[event].push(callback);
+        }
+
+        function one(event, callback) {
+            if (handls[event] == null) {
+                handls[event] = callback;
+            }
+        }
+        
+        function remove(event){
+            
+            delete handls[event];
+            
+        }
+        
+        function trigger(events) {
+
+            if (Object.prototype.toString.call(events).indexOf('Object')) {
+
+                for (var event in events) {
+
+                    if (Object.prototype.toString.call(handls[event]).indexOf('Array')) {
+
+                        for (var i = 0, len = handls[event].length; i < len; i++) {
+                            
+                            handls[event][i](events);
+                        }
+
+                    } else {
+                        handls[event](events);
+                    }
+
+                }
+
+            } else {
+                return false;
+            }
+
+        }
+
+        return {
+            listen: listen,
+            one:one,
+            trigger: trigger,
+            remove:remove
+        }
+
+    });
+
+    Event.listen("test1", function(event) {
+        console.log(event);
+    })
+
+    Event.listen("test1", function(event) {
+        console.log("test1-2");
+    })
+
+    Event.trigger({
+        'test1': "test-arg"
+    });
+    
+    
+
+</script>
+
 </html>
