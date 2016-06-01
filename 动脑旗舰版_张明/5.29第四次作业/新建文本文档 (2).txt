@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="div" style="width:300px;height:300px;border:1px solid red"></div>
+</body>
+<script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+	for(var y=1;y<100;y++){
+		var a=y%5;
+		if(a==0&&3*y<100){
+			var x=(100-3*y)/5;
+			var z=100-x-y;
+			$('#div').html(x+':'+y+':'+z);
+		}
+
+	}
+});
+</script>
+</html>
