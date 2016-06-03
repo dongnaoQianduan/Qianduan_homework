@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		li{
+			list-style:none;
+		}
+		#div{
+			padding: 0px;
+			width: 500px;
+			height: 264px;
+			font-size:16px;
+			text-align: center;
+			border:1px solid gray;
+			position: absolute;
+
+		}
+		#div ul{
+			margin:0px;
+			padding: 0px;
+			width: 110px;
+			float: left;
+		}
+		
+		#div ul li{
+			margin:0px;
+			width: 100px;
+			height: 60px;
+			padding: 3px 5px;
+			line-height: 60px;
+			cursor: pointer;
+			background-color: #C81624;
+			
+		}
+		#content1{
+			width: 380px;
+			height: 258px;
+			
+			float: left;
+			position: absolute;
+			padding: 3px 5px;
+			left:110px;
+			top:-0px;
+			display: none;
+
+		}
+		#content2{
+			width: 380px;
+			height: 258px;
+			
+			float: left;
+			position: absolute;
+			padding: 3px 5px;
+			left:110px;
+			top:-0px;
+			display: none;
+
+		}
+		#content3{
+			width: 380px;
+			height: 258px;
+			
+			float: left;
+			position: absolute;
+			padding: 3px 5px;
+			left:110px;
+			top:-0px;
+			display: none;
+
+		}
+		#content4{
+			width: 380px;
+			height: 258px;
+			
+			float: left;
+			position: absolute;
+			padding: 3px 5px;
+			left:110px;
+			top:-0px;
+			display: none;
+
+		}
+		#div ul li:hover{
+			background-color: #fff;
+
+		}
+		.li1:hover #content1{
+			display: block;
+		}
+		.li2:hover #content2{
+			display: block;
+		}
+		.li3:hover #content3{
+			display: block;
+		}
+		.li4:hover #content4{
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="div">
+		<ul>
+			<li class="li1">第一行
+				<div id="content1">我是1</div>
+			</li>
+			<li class="li2">第二行
+				<div id="content2">我是2</div>
+			</li>
+			<li class="li3">第三行
+				<div id="content3">我是3</div>
+			</li>
+			<li class="li4">第四行
+				<div id="content4">我是4</div>
+			</li>
+		</ul>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+    <meta charset="utf-8">
+    <head>
+        <style type="text/css">
+            .wrap {
+                position: relative;
+            }
+             
+            .left {
+                position: absolute;
+                border: 1px solid green;
+                background: green;
+                line-height: 26px;
+                width: 300px;
+                z-index: 2;
+                height: 60px;
+            }
+            .left:hover{
+                border-bottom: 0px;
+            }
+             
+            .right {
+                position: absolute;
+                top:60px;
+                border: 1px solid green;
+                background: green;
+                width: 600px;
+                height: 300px;
+                z-index: 1;
+                display: none;
+            }
+            .center{
+                background: green;
+                width: 300px;
+                height: 10px;
+                z-index: 3;
+                 position: absolute;
+                 top:60px;
+                 display: none;
+            }
+        </style>
+        <script type="text/javascript" src="jquery-1.10.2.min.js">
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".left").mouseover(function(){
+                    $(".right").show();
+                    $('.center').css('border-left','1px solid green').show();
+
+                }).mouseout(function(){
+                    $(".right").hide();
+                    $('.center').hide();
+                });
+                 
+            });
+        </script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="left">
+             
+                <div class="right">
+               
+            </div>
+            <div class="center"></div>
+            </div>
+            
+        </div>
+    </body>
+</html>
