@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//g.alicdn.com/??mui/global/3.0.15/global.css,zebra-pages/fp5/5.1.7/pc/css/index.css">
+
+    <link href="style/main.css"  rel="stylesheet"/>
+    <title></title>
+</head>
+<script>
+    window.onload=function(){
+        var leftMenu=document.getElementById("nav_con").getElementsByTagName('li');
+        var rightMenu=document.getElementsByClassName('nav_con_content')
+        //左侧菜单
+        for(var i=0;i<leftMenu.length;i++){
+            leftMenu[i].index=i;
+            leftMenu[i].onmouseover=function(){
+                //是否存在子菜单
+                if(rightMenu[this.index]){
+                    rightMenu[this.index].style.display="block";
+                }
+            }
+            leftMenu[i].onmouseout=function(){
+                if(rightMenu[this.index]){
+                    rightMenu[this.index].style.display="none";
+                }
+            }
+        }
+
+
+        for(var i=0;i<rightMenu.length;i++){
+            rightMenu[i].index=i;
+            rightMenu[i].onmouseover=function(){
+                leftMenu[this.index].className="left_menu_checked"
+                this.style.display="block"
+            }
+            rightMenu[i].onmouseleave=function(){
+                leftMenu[this.index].className=""
+                this.style.display="none"
+            }
+        }
+    }
+</script>
+<body>
+   <div class="banner">
+       <div class="category_type ">
+            <ul class="w1200">
+                <li class="shopping_name"><a href="#">商品分类</a></li>
+                <li><a href="#">天猫超市</a></li>
+                <li><a href="#">天猫国际</a></li>
+                <li><a href="#">天猫超市</a></li>
+                <li><a href="#">天猫国际</a></li>
+                <li><a href="#">天猫超市</a></li>
+                <li><a href="#">天猫国际</a></li>
+                <li><a href="#">天猫超市</a></li>
+                <li><a href="#">天猫国际</a></li>
+                <li><a href="#">天猫超市</a></li>
+                <li><a href="#">天猫国际</a></li>
+            </ul>
+       </div>
+       <div class="banner_img">
+           <div class="w1200 relative">
+               <ul>
+                   <li><a href="#"><img class="tanx-banner" src="https://aecpm.alicdn.com/simba/img/TB1_JXrLVXXXXbZXVXXSutbFXXX.jpg"  /></a></li>
+               </ul>
+
+               <ul class="nav_con" id="nav_con">
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>内衣/内衣</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>男装/运动户外</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>内衣/内衣</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>男装/运动户外</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>内衣/内衣</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>男装/运动户外</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>内衣/内衣</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>男装/运动户外</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>内衣/内衣</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>男装/运动户外</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>内衣/内衣</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>男装/运动户外</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>内衣/内衣</li>
+                   <li><i class="fp-iconfont nav-item-icon icon"></i>男装/运动户外</li>
+               </ul>
+               <ul class="nav_con_content">
+                   <li>
+                       <h3>当季流行</h3>
+                       <div>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                        </div>
+                   </li>
+
+
+                   <li>
+                       <h3>当季流行</h3>
+                       <div>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                       </div>
+                   </li>
+               </ul>
+
+
+
+
+               <ul class="nav_con_content">
+                   <li>
+                       <h3>当季流行</h3>
+                       <div>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                       </div>
+                   </li>
+
+
+                   <li>
+                       <h3>当季流行</h3>
+                       <div>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                       </div>
+                   </li>
+
+
+                   <li>
+                       <h3>当季流行</h3>
+                       <div>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                           <a>商场同款</a>
+                           <a>女士新品</a>
+                           <a>短袖T恤</a>
+                           <a>时尚套装</a>
+                           <a>女装</a>
+                       </div>
+                   </li>
+               </ul>
+           </div>
+       </div>
+
+   </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

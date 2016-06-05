@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//g.alicdn.com/mui/??common/4.0.45/index-pc.css,zebra-act-headbanner4/4.0.13/index-pc.css,zebra-act-imgnav4-990x40/4.0.15/index-pc.css,zebra-act-newbanner-v4/4.0.12/index-pc.css,zebra-macro/4.1.5/index-pc.css,zebra-startop/4.0.40/index-pc.css,act-style/4.0.0/act.css,zebra-rightnav/4.0.40/index-pc.css,zebra-act-newtabnav4/4.0.14/index-pc.css,zebra-ys/4.0.7/css/pc/index.css,zebra-ys/4.0.7/css/pc/four-in-row.css">
+
+    <link href="style/main.css"  rel="stylesheet"/>
+    <title></title>
+</head>
+<script>
+    window.onload=function(){
+       var oMap= document.getElementById('more');
+       var oMapContent= document.getElementById('more_menu');
+
+        clickMe(oMap,oMapContent);
+    }
+    function clickMe(obj,obj2){
+        obj.onmouseover=function(){
+            obj2.style.display="block";
+        }
+        obj.onmouseout=function(){
+           obj2.style.display="none";
+        }
+        obj2.onmouseover=function(){
+            this.style.display="block";
+            obj.className="more menu_checked"
+        }
+        obj2.onmouseout=function(){
+            this.style.display="none";
+            obj.className="more"
+
+        }
+    }
+</script>
+<body>
+   <div class="header">
+       <div class="w1200">
+            <ul class="left">
+                <li><i class="mui-global-iconfont">󰄫</i>喵，欢迎来天猫</li>
+                <li><a href="#">请登录</a></li>
+                <li><a href="#">免费注册</a></li>
+            </ul>
+
+           <ul class="right">
+               <li class="header_menu_li">
+                   <a href="#" class="header_menu">我的淘宝<b></b></a>
+                   <ul class="header_menu_child">
+                       <li><a>已买到的商品</a></li>
+                       <li><a>已卖出的商品</a></li>
+                   </ul>
+               </li>
+               <li><a href="#"><i class="mui-global-iconfont">㑉</i>我关注的品牌</a></li>
+               <li><a href="#"><i class="mui-global-iconfont">󰅈</i>购物车<span class="count">0</span>件</a></li>
+
+               <li class="header_menu_li">
+                   <a href="#" class="header_menu">收藏夹<b></b></a>
+                   <ul class="header_menu_child">
+                       <li><a>已买到的商品</a></li>
+                       <li><a>已卖出的商品</a></li>
+                   </ul>
+               </li>
+
+
+               <li>
+                   <a href="#">手机版</a>
+                   <div></div>
+               </li>
+               <li><a href="#">淘宝网</a></li>
+
+
+               <li class="header_menu_li">
+                   <a href="#" class="header_menu">商家支持<b></b></a>
+                   <dl class="header_dl_child">
+                        <dt>商家</dt>
+                       <dd><a>商家中心</a></dd>
+                       <dd><a>商家中心</a></dd>
+                       <dd><a>商家中心</a></dd>
+                       <dd><a>商家中心</a></dd>
+                       <dd><a>商家中心</a></dd>
+                       <dd><a>商家中心</a></dd>
+                       <dd><a>商家中心</a></dd>
+                       <dd><a>商家中心</a></dd>
+                   </dl>
+               </li>
+
+
+               <li><a class="more" id="more"><i class="mui-global-iconfont"></i>网站导航<b></b></a></li>
+           </ul>
+       </div>
+   </div>
+
+    <div class="more_menu w1200 relative" id="more_menu">
+        <dl>
+            <dt>热点推荐&nbsp;&nbsp;Hot</dt>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+        </dl>
+        <dl>
+            <dt>热点推荐&nbsp;&nbsp;Hot</dt>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+        </dl>
+        <dl>
+            <dt>热点推荐&nbsp;&nbsp;Hot</dt>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+        </dl>
+        <dl>
+            <dt>热点推荐&nbsp;&nbsp;Hot</dt>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+            <dd>天猫超市</dd>
+        </dl>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
